@@ -16,7 +16,7 @@
 .cars-card h3 {
 	align-self: flex-start;
 	color: #262626;
-	font-size: 1.25rem;
+	font-size: 1.2rem;
 	margin-bottom: 1.75rem;
 }
 .card-button {
@@ -36,4 +36,8 @@
 
 .share:hover {
 	color: #1c69d4;
+}
+
+.invisible {
+	display: none;
 }

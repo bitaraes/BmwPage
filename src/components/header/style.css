@@ -36,9 +36,10 @@
 .list__item:first-child {
 	padding: 0.25rem 1rem 0.25rem 0;
 }
-.list__item a {
+.list__item span {
 	color: #666666;
 	font-weight: bold;
 	padding: 0.25rem 0.5rem;
 	text-decoration: none;
+	cursor: pointer;
 }

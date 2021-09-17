@@ -3,12 +3,12 @@ import Button from "../button/button";
 
 import "./style.css";
 
-export default function CarsCard({ img, name }) {
+export default function CarsCard({ img, name, invisible }) {
 	return (
 		<div className="cars-card">
 			<img src={`${img}`} alt="Foto do veículo" />
 			<h3>{name}</h3>
-			<div className="card-button">
+			<div className={`card-button ${invisible}`}>
 				<Button color="blue" text="Cotação" />
 			</div>
 			<div className="social">
