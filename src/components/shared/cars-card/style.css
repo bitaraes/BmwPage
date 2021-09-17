@@ -1,0 +1,18 @@
+.cars-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 85%;
+	height: 365px;
+}
+.cars-card img {
+	width: 100%;
+}
+.cars-card h3 {
+	align-self: flex-start;
+}
+.card-button {
+	width: 100%;
+	height: 45px;
+}
