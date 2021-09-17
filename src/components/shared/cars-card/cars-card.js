@@ -13,8 +13,8 @@ export default function CarsCard({ img, name }) {
 			</div>
 			<div className="social">
 				<span>Compartilhe: </span>
-				<i className="icon-facebook"></i>
-				<i className="icon-whatsapp"></i>
+				<i className="icon-facebook share"></i>
+				<i className="icon-whatsapp share"></i>
 			</div>
 		</div>
 	);
