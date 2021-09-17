@@ -1,18 +1,39 @@
 .cars-card {
-	display: flex;
-	justify-content: center;
 	align-items: center;
+	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	width: 85%;
-	height: 365px;
 }
 .cars-card img {
+	margin-bottom: 1rem;
+	transition: opacity 0.3s;
 	width: 100%;
+}
+.cars-card img:hover {
+	opacity: 0.5;
 }
 .cars-card h3 {
 	align-self: flex-start;
+	color: #262626;
+	font-size: 1.25rem;
+	margin-bottom: 1.75rem;
 }
 .card-button {
-	width: 100%;
 	height: 45px;
+	margin-bottom: 1.5rem;
+	width: 100%;
+}
+.social {
+	align-self: flex-start;
+	color: #666;
+}
+.share {
+	cursor: pointer;
+	font-size: 1.25rem;
+	padding: 0.5rem;
+}
+
+.share:hover {
+	color: #1c69d4;
 }

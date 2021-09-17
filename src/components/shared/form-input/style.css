@@ -1,17 +1,17 @@
 .input-container {
-	position: relative;
-	padding-top: 15px;
-	font-size: 14px;
 	color: #666666;
+	font-size: 14px;
 	margin-bottom: 30px;
+	padding-top: 15px;
+	position: relative;
 }
 .input-container input {
 	border: 0;
 	border-bottom: 2px solid #666666;
-	outline: none;
-	transition: all 0.3s ease-out;
 	border-radius: 0;
 	color: #666666;
+	outline: none;
+	transition: all 0.3s ease-out;
 	width: 100%;
 }
 .input-container input:focus {
@@ -21,16 +21,16 @@
 	color: transparent;
 }
 .input-container label {
+	margin-top: 13px;
 	pointer-events: none;
 	position: absolute;
-	top: 0;
 	left: 0;
-	margin-top: 13px;
+	top: 0;
 	transition: all 0.3s ease-out;
 }
 .input-container input:focus + label,
 .input-container input:not(:placeholder-shown) + label {
+	color: #666666;
 	font-size: 11px;
 	margin-top: 0;
-	color: #666666;
 }
