@@ -19,6 +19,12 @@
 	align-items: center;
 	margin-left: 0.5rem;
 }
+.header-button {
+	display: flex;
+	height: 43px;
+	color: #fff;
+	margin-right: 2.25rem;
+}
 .list {
 	display: flex;
 	justify-content: flex-start;

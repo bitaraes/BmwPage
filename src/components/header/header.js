@@ -25,21 +25,27 @@ export default function Header() {
 				<div className="header__container">
 					<nav className="header__nav">
 						<div className="header__buttons">
-							<Button
-								color="black"
-								text="(21) 2042-4442"
-								icon="telefone"
-							/>
-							<Button
-								color="black"
-								text="TOUR VIRTUAL"
-								icon="360"
-							/>
-							<Button
-								color="green"
-								text="WHATSAPP"
-								icon="whatsapp"
-							/>
+							<div className="header-button">
+								<Button
+									color="black"
+									text="(21) 2042-4442"
+									icon="telefone"
+								/>
+							</div>
+							<div className="header-button">
+								<Button
+									color="black"
+									text="TOUR VIRTUAL"
+									icon="360"
+								/>
+							</div>
+							<div className="header-button">
+								<Button
+									color="green"
+									text="WHATSAPP"
+									icon="whatsapp"
+								/>
+							</div>
 						</div>
 						<div className="header__list">
 							<ul className="list">

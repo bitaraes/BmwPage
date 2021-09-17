@@ -6,8 +6,8 @@ export default function Button({ text, color, icon }) {
 	return (
 		<>
 			<button className={`button ${color}`}>
-				<i className={`icon-${icon} button__icon`}></i>
-				{text}
+				{icon ? <i className={`icon-${icon} button__icon`}></i> : null}
+				<span>{text}</span>
 			</button>
 		</>
 	);
