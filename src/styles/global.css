@@ -1,0 +1,17 @@
+@font-face {
+	font-family: [Bmw-bold];
+	src: url(../assets/fonts/BMWTypeNext-Bold.ttf);
+}
+@font-face {
+	font-family: [Bmw];
+	src: url(../assets/fonts/BMWTypeNext-Light.ttf);
+}
+
+* {
+	font-family: Bmw;
+}
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+}

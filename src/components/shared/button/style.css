@@ -1,0 +1,43 @@
+.button {
+	font-weight: bold;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	color: #000;
+	border: none;
+	height: 43px;
+	margin-right: 2.25rem;
+	padding: 0 1.25rem;
+}
+
+.button__icon {
+	font-size: 20px;
+	color: #fff;
+}
+
+.blue,
+.black,
+.green {
+	color: #fff;
+}
+
+.blue {
+	background-color: #1c69d4;
+}
+.black {
+	background-color: #000;
+}
+.green {
+	background-color: #25d366;
+}
+
+.blue:hover {
+	background-color: #0351be;
+}
+.black:hover {
+	background-color: #575757;
+}
+.green:hover {
+	background-color: #35aa61;
+}

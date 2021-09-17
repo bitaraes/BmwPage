@@ -1,0 +1,42 @@
+.header {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 152px;
+	background-color: #fff;
+	box-shadow: 0 3px 6px #00000029;
+}
+.header__container {
+	display: flex;
+	justify-content: space-between;
+}
+.header__nav {
+	display: flex;
+	flex-direction: column;
+}
+.header__buttons {
+	display: flex;
+	align-items: center;
+	margin-left: 0.5rem;
+}
+.list {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 30px;
+}
+.list__item {
+	padding: 0.25rem 1rem;
+}
+.list__item:first-child {
+	padding: 0.25rem 1rem 0.25rem 0;
+}
+.list__item a {
+	color: #666666;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0.25rem 0.5rem;
+}
+
+.logo {
+	flex-basis: 1;
+}
