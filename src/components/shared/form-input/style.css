@@ -34,3 +34,7 @@
 	font-size: 11px;
 	margin-top: 0;
 }
+
+.form-control-input {
+	resize: none;
+}

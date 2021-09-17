@@ -49,10 +49,12 @@ export default function Header() {
 						</div>
 						<div className="header__list">
 							<ul className="list">
-								{linksList.map((atual, index) => {
+								{linksList.map((current, index) => {
 									return (
 										<li className="list__item" key={index}>
-											<a href="#">{atual}</a>
+											<a href={`#${current}`}>
+												{current}
+											</a>
 										</li>
 									);
 								})}

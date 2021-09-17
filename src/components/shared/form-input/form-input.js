@@ -20,6 +20,21 @@ export default function FormInput({ type, id, placeholder, name, options }) {
 			</div>
 		);
 	}
+	if (type === "textarea") {
+		return (
+			<div className="input-container">
+				<textarea
+					className="form-control-input"
+					placeholder={placeholder}
+					name={name}
+					id={id}
+					rows="2"
+					required
+				></textarea>
+				<label htmlFor={id}>{placeholder}</label>
+			</div>
+		);
+	}
 
 	return (
 		<div className="input-container">

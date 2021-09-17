@@ -24,7 +24,7 @@ export default function Form() {
 				"Z4",
 			],
 		},
-		{ type: "text", name: "message", placeholder: "Mensagem" },
+		{ type: "textarea", name: "message", placeholder: "Mensagem" },
 	];
 	return (
 		<div className="form-container">
@@ -34,7 +34,6 @@ export default function Form() {
 			</div>
 			<form>
 				{inputs.map((current, index) => {
-					console.log(current);
 					return (
 						<FormInput
 							key={index}
