@@ -27,9 +27,8 @@
 }
 .header-button-mobile {
 	color: #fff;
-	display: flex;
-	height: 43px;
 	display: none;
+	height: 43px;
 }
 .list {
 	display: flex;
@@ -44,10 +43,10 @@
 }
 .list__item span {
 	color: #666666;
+	cursor: pointer;
 	font-weight: bold;
 	padding: 0.25rem 0.5rem;
 	text-decoration: none;
-	cursor: pointer;
 }
 
 .phone-number {
@@ -67,20 +66,19 @@
 		display: none;
 	}
 	.logo img {
+		height: 30px;
 		margin: 15px;
 		width: 30px;
-		height: 30px;
 	}
 	.nav-logo-container {
+		align-items: center;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
 		width: 100%;
 	}
 	.phone-number {
-		display: block;
 		color: #666666;
-
+		display: block;
 		margin: 15px;
 	}
 }

@@ -1,9 +1,9 @@
 .footer {
 	background-color: #e6e6e6;
-	height: 250px;
-	width: 100%;
-	margin-bottom: 50px;
 	color: #666666;
+	height: 250px;
+	margin-bottom: 50px;
+	width: 100%;
 }
 
 .footer__text {

@@ -44,13 +44,13 @@
 
 @media screen and (max-width: 1380px) {
 	.slider__item-card .social {
+		align-self: center;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-self: center;
 	}
 	.slider__item-card .cars-card h3 {
-		text-align: center;
 		align-self: center;
+		text-align: center;
 	}
 }
