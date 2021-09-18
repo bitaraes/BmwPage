@@ -4,7 +4,7 @@ import CarsCard from "../shared/cars-card/cars-card";
 
 import "./style.css";
 
-export default function ListCars() {
+export default function ListCars({ click }) {
 	return (
 		<>
 			<div className="container">
@@ -21,6 +21,7 @@ export default function ListCars() {
 									<CarsCard
 										img={current.img}
 										name={current.name}
+										click={click}
 									/>
 								</li>
 							);
