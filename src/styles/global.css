@@ -4,10 +4,15 @@
 }
 
 body {
-	font-family: Bmw;
+	font-family: Bmw !important;
 }
 
 .container {
 	margin: 0 auto;
 	width: 70%;
+}
+@media screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+	}
 }

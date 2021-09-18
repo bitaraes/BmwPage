@@ -57,3 +57,40 @@
 	margin-right: 2.25rem;
 	width: 100%;
 }
+@media screen and (max-width: 1228px) {
+	.estimate-form-container {
+		height: 385px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.estimate-form-container {
+		position: fixed;
+		padding: 0.5rem;
+		width: 98%;
+		z-index: 1000;
+		top: 50px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.estimate-form-container {
+		width: 97%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.estimate-form-container {
+		width: 96%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.estimate-form-container {
+		position: fixed;
+		width: 95%;
+	}
+}

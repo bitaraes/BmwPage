@@ -25,6 +25,12 @@
 	height: 43px;
 	margin-right: 2.25rem;
 }
+.header-button-mobile {
+	color: #fff;
+	display: flex;
+	height: 43px;
+	display: none;
+}
 .list {
 	display: flex;
 	justify-content: flex-start;
@@ -42,4 +48,48 @@
 	padding: 0.25rem 0.5rem;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.phone-number {
+	display: none;
+}
+
+@media screen and (max-width: 1228px) {
+	.list__item {
+		padding: 0.25rem 0.5rem;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.header {
+		height: 90px;
+	}
+	.header__nav {
+		display: none;
+	}
+	.logo img {
+		margin: 15px;
+		width: 30px;
+		height: 30px;
+	}
+	.nav-logo-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+	.phone-number {
+		display: block;
+		color: #666666;
+
+		margin: 15px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.header {
+		position: sticky;
+		top: 0;
+	}
+	.header-button-mobile {
+		display: block;
+	}
 }

@@ -3,6 +3,7 @@
 	height: 250px;
 	width: 100%;
 	margin-bottom: 50px;
+	color: #666666;
 }
 
 .footer__text {
@@ -32,4 +33,23 @@
 }
 .copyright__by span {
 	margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.footer__text p {
+		font-size: 10px;
+	}
+	.footer__copyright {
+		font-size: 10px;
+		flex-direction: column;
+	}
+	.copyright__bmw-logo {
+		display: none;
+	}
+	.copyright__by {
+		margin-block: 30px;
+	}
+	.copyright__by {
+		margin-block: 30px;
+	}
 }

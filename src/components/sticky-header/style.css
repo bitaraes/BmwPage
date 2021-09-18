@@ -17,3 +17,9 @@
 .lock {
 	width: 320px;
 }
+
+@media screen and (max-width: 768px) {
+	.sticky-header {
+		display: none;
+	}
+}

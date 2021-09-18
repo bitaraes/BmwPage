@@ -5,3 +5,19 @@
 .banner__img {
 	width: 100%;
 }
+
+.mobile {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.banner {
+		margin-bottom: 30px;
+	}
+	.mobile {
+		display: inline-block;
+	}
+	.desktop {
+		display: none;
+	}
+}

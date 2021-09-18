@@ -22,3 +22,22 @@
 	margin-bottom: 30px;
 	width: 23%;
 }
+
+@media screen and (max-width: 1370px) {
+	.list-cars__item-card {
+		width: 45%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.list-cars__container h1 {
+		font-size: 20px;
+		margin-bottom: 1.875rem;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	.list-cars__item-card {
+		width: 100%;
+	}
+}

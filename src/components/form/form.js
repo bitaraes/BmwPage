@@ -27,35 +27,37 @@ export default function Form() {
 		{ type: "textarea", name: "message", placeholder: "Mensagem" },
 	];
 	return (
-		<div className="form-container">
-			<div className="form-title">
-				<i className="icon-carro"></i>
-				<h3>Solicitar cotação</h3>
+		<>
+			<div className="form-container">
+				<div className="form-title">
+					<i className="icon-carro"></i>
+					<h3>Solicitar cotação</h3>
+				</div>
+				<form>
+					{inputs.map((current, index) => {
+						return (
+							<FormInput
+								key={index}
+								type={current.type}
+								id={`input-${index}`}
+								placeholder={current.placeholder}
+								name={current.name}
+								options={current.options}
+								required
+							/>
+						);
+					})}
+					<div className="privacy-checkbox">
+						<input type="checkbox" id="accept" required></input>
+						<label htmlFor="accept">
+							Aceito a <span>Política de Privacidade</span>
+						</label>
+					</div>
+					<div className="submit-button">
+						<Button text="Enviar" color="blue" />
+					</div>
+				</form>
 			</div>
-			<form>
-				{inputs.map((current, index) => {
-					return (
-						<FormInput
-							key={index}
-							type={current.type}
-							id={`input-${index}`}
-							placeholder={current.placeholder}
-							name={current.name}
-							options={current.options}
-							required
-						/>
-					);
-				})}
-				<div className="privacy-checkbox">
-					<input type="checkbox" id="accept" required></input>
-					<label htmlFor="accept">
-						Aceito a <span>Política de Privacidade</span>
-					</label>
-				</div>
-				<div className="submit-button">
-					<Button text="Enviar" color="blue" />
-				</div>
-			</form>
-		</div>
+		</>
 	);
 }

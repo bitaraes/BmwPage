@@ -29,3 +29,12 @@
 	color: #666666;
 	margin-right: 15px;
 }
+@media screen and (max-width: 768px) {
+	.whatsapp-logo {
+		width: 60px;
+		height: 60px;
+	}
+	.sticky-footer .phone-number {
+		display: none;
+	}
+}

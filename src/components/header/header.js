@@ -6,7 +6,7 @@ import "./style.css";
 import Logo from "../../assets/imgs/logos/logo-bmw-rio.svg";
 import CarsSlider from "../cars-slider/cars-slider";
 
-export default function Header() {
+export default function Header({ click }) {
 	const linksList = [
 		"1",
 		"2",
@@ -75,12 +75,22 @@ export default function Header() {
 								</ul>
 							</div>
 						</nav>
-						<div className="logo">
-							<img src={Logo} alt="Logo"></img>
+						<div className="nav-logo-container">
+							<div className="phone-number">
+								<i className="icon-telefone"></i>
+								<span>(21) 2042-4442</span>
+							</div>
+							<div className="logo">
+								<img src={Logo} alt="Logo"></img>
+							</div>
 						</div>
+					</div>
+					<div className="header-button-mobile" onClick={click}>
+						<Button color="blue" text="Solicite uma cotação" />
 					</div>
 				</div>
 			</header>
+
 			<CarsSlider isVisible={sliderActive} />
 		</>
 	);

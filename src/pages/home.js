@@ -42,12 +42,16 @@ export function Home() {
 			{scrollBlock()}
 			{!open ? null : (
 				<Estimate
-					close={() => {
+					click={() => {
 						setOpen(!open);
 					}}
 				/>
 			)}
-			<Header />
+			<Header
+				click={() => {
+					setOpen(!open);
+				}}
+			/>
 			{scroll ? (
 				<StickyHeader
 					open={open}

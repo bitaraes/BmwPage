@@ -41,6 +41,30 @@
 	color: #fff;
 	display: flex;
 	height: 43px;
-	margin-right: 2.25rem;
 	width: 100%;
+}
+
+@media screen and (max-width: 1370px) {
+	.form-container {
+		top: 157px;
+	}
+}
+
+@media screen and (max-width: 1310px) {
+	.form-container {
+		height: 465px;
+		padding: 0.7rem 1.875rem;
+	}
+	.form-title {
+		margin-bottom: 1.5rem;
+	}
+	.privacy-checkbox {
+		margin: 0.8rem 0;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.form-container {
+		display: none;
+	}
 }

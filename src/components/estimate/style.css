@@ -7,3 +7,18 @@
 	z-index: 90;
 	opacity: 0.3;
 }
+
+.form__button-estimate {
+	display: none;
+	background: red;
+	width: 100%;
+}
+@media screen and (max-width: 768px) {
+	.form__button-estimate {
+		display: inline-block;
+		height: 50px;
+		position: fixed;
+		top: 0;
+		z-index: 9999;
+	}
+}

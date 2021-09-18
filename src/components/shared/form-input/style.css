@@ -38,3 +38,9 @@
 .form-control-input {
 	resize: none;
 }
+
+@media screen and (max-width: 1228px) {
+	.input-container {
+		margin-bottom: 16px;
+	}
+}
