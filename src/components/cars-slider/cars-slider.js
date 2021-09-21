@@ -7,28 +7,18 @@ import { carsData } from "../cars-data/cars-data";
 
 export default function CarsSlider({ isVisible }) {
 	const [current, setCurrent] = useState(0);
-	const [last, setLast] = useState(4);
-	const [cars, setCars] = useState(carsData.slice(current, last));
+	const list = document.querySelector(".slider__list-cars");
 
-	useEffect(() => {
-		function execute() {
-			setCars(carsData.slice(current, last));
-		}
-		execute();
-	}, [current, last]);
-
-	function nextSlide() {
-		if (last < carsData.length - 1) {
-			setLast(last + 1);
-			setCurrent(current + 1);
-		}
+	async function nextSlide() {
+		const next = current + 1;
+		list.style.transform = `translateX(calc(70vw / 4 * ${next} * -1))`;
+		setCurrent(current + 1);
 	}
 
 	function prevSlide() {
-		if (current > 0) {
-			setLast(last - 1);
-			setCurrent(current - 1);
-		}
+		const prev = current - 1;
+		list.style.transform = `translateX(calc(70vw / 4 * ${prev} * -1))`;
+		setCurrent(current - 1);
 	}
 
 	const sliderStyle = {
@@ -39,12 +29,12 @@ export default function CarsSlider({ isVisible }) {
 
 	return (
 		<div className="slider" style={sliderStyle}>
+			{current > 0 ? (
+				<i className="icon-seta-a-esquerda" onClick={prevSlide}></i>
+			) : null}
 			<div className="slider__container">
-				{current > 0 ? (
-					<i className="icon-seta-a-esquerda" onClick={prevSlide}></i>
-				) : null}
 				<ul className="slider__list-cars">
-					{cars.map((current, index) => {
+					{carsData.map((current, index) => {
 						return (
 							<li
 								className="slider__item-card"
@@ -60,10 +50,10 @@ export default function CarsSlider({ isVisible }) {
 						);
 					})}
 				</ul>
-				{last < carsData.length - 1 ? (
-					<i className="icon-seta-a-direita" onClick={nextSlide}></i>
-				) : null}
 			</div>
+			{current < carsData.length - 4 ? (
+				<i className="icon-seta-a-direita" onClick={nextSlide}></i>
+			) : null}
 		</div>
 	);
 }
