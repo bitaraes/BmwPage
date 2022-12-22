@@ -2,7 +2,6 @@ import React from "react";
 
 import "./style.css";
 import logoBmw from "../../assets/imgs/logos/logo-bmw-rio.svg";
-import logoAlpes from "../../assets/imgs/logos/logo-alpes.png";
 
 export default function Footer() {
 	return (
@@ -27,7 +26,7 @@ export default function Footer() {
 					<p>© Copyright © 2021 Lorem ipsum dolor sit amet.</p>
 					<div className="copyright__by">
 						<span>Feito por: </span>{" "}
-						<img src={logoAlpes} alt="Alpes One Logo" />
+						<a href="https://www.linkedin.com/in/ibitaraes/">Igor Bitarães</a>
 					</div>
 				</div>
 			</div>
