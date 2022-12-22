@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import "./style.css";
 import CarsCard from "../shared/cars-card/cars-card";
@@ -31,7 +31,9 @@ export default function CarsSlider({ isVisible }) {
 		<div className="slider" style={sliderStyle}>
 			{current > 0 ? (
 				<i className="icon-seta-a-esquerda" onClick={prevSlide}></i>
-			) : null}
+			) : (
+				<i className="icon-seta-a-esquerda visible"></i>
+			)}
 			<div className="slider__container">
 				<ul className="slider__list-cars">
 					{carsData.map((current, index) => {
@@ -53,7 +55,9 @@ export default function CarsSlider({ isVisible }) {
 			</div>
 			{current < carsData.length - 4 ? (
 				<i className="icon-seta-a-direita" onClick={nextSlide}></i>
-			) : null}
+			) : (
+				<i className="icon-seta-a-direita visible"></i>
+			)}
 		</div>
 	);
 }

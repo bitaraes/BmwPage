@@ -37,3 +37,8 @@
 	margin-bottom: 30px;
 	width: calc(70vw / 4);
 }
+
+.slider i.visible {
+	opacity: 0;
+	cursor: default;
+}
