@@ -7,7 +7,7 @@ export default function Routes() {
 	return (
 		<BrowserRouter>
 			<Switch>
-				<Route exact path="/" component={Home} />
+				<Route exact path="/BmwPage" component={Home} />
 			</Switch>
 		</BrowserRouter>
 	);
